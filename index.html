@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memecoin Risk Check</title>
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Memecoin Risk Check</h1>
+      <p class="subtitle">Paste a contract address or a link (Dexscreener, pump.fun, Solscan, Birdeye, Basescan…) — Solana &amp; Base supported.</p>
+    </header>
+
+    <form id="check-form" class="check-form" autocomplete="off">
+      <input id="token-input" type="text" placeholder="Address or link…" spellcheck="false" autocomplete="off" />
+      <button type="submit" id="check-btn">Analyze</button>
+    </form>
+
+    <div id="recent" class="recent" hidden>
+      <span class="recent-label">Recent:</span>
+      <div id="recent-chips" class="recent-chips"></div>
+    </div>
+
+    <div id="status" class="status" hidden></div>
+
+    <section id="report" class="report" hidden></section>
+
+    <footer>
+      <p>Not financial advice. Automated heuristic checks of on-chain signals only — a clean report does not mean a token is a good investment. Memecoins are extremely high-risk; only ever risk money you can afford to lose entirely.</p>
+      <p class="sources">Data: Dexscreener · GoPlus Security · RugCheck · Honeypot.is — all fetched directly from your browser, nothing sent to any server of ours.</p>
+    </footer>
+  </div>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>
